@@ -1,0 +1,32 @@
+.products-page {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.products-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products-page__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.products-page__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.products-page__button {
+  padding: 7px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  background: #111827;
+  color: #f9fafb;
+}

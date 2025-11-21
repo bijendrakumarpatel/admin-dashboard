@@ -1,0 +1,6 @@
+/* Add global app-level styling here if needed */
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+}

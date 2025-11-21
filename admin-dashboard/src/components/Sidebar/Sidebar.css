@@ -1,0 +1,123 @@
+/* -------------------------
+   PREMIUM MODERN SIDEBAR UI
+--------------------------*/
+
+.sidebar {
+  width: 260px;
+  background: #ffffff;
+  height: 100vh;
+  border-right: 1px solid rgba(0,0,0,0.07);
+  
+  /* FIX 1: This ensures padding doesn't increase the width beyond 260px */
+  box-sizing: border-box; 
+
+  /* Premium Shadow */
+  box-shadow: 4px 0 20px rgba(0,0,0,0.06);
+
+  padding: 25px 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  z-index: 100; /* Ensures sidebar stays on top of content */
+  transition: all 0.3s ease;
+}
+
+/* Brand Section */
+.sidebar__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sidebar__brand-logo {
+  /* Prevent logo from shrinking if space is tight */
+  flex-shrink: 0; 
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, #4A90E2, #357ABD);
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1px;
+
+  box-shadow: 0 8px 14px rgba(53,122,189,0.35);
+}
+
+.sidebar__brand-name {
+  font-size: 19px; /* Slightly smaller to fit perfectly */
+  font-weight: 700;
+  color: #222;
+  
+  /* FIX 2: This forces the text to stay on one line */
+  white-space: nowrap; 
+}
+
+
+/* -------------------------
+   Navigation
+--------------------------*/
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+
+  color: #444;
+  text-decoration: none;
+
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+/* Small dot indicator */
+.sidebar__link-dot {
+  width: 8px;
+  height: 8px;
+  background: #c3c3c3;
+  border-radius: 50%;
+  transition: all 0.25s ease;
+  flex-shrink: 0; /* Ensures dot stays circular */
+}
+
+.sidebar__link:hover {
+  background: rgba(74,144,226,0.1);
+  color: #357ABD;
+  transform: translateX(4px);
+}
+
+.sidebar__link:hover .sidebar__link-dot {
+  background: #357ABD;
+}
+
+/* ACTIVE STATE */
+.sidebar__link--active {
+  background: linear-gradient(135deg, #4A90E2, #357ABD);
+  color: #fff;
+  font-weight: 600;
+  transform: translateX(6px);
+
+  box-shadow: 0 4px 14px rgba(53,122,189,0.4);
+}
+
+.sidebar__link--active .sidebar__link-dot {
+  background: white;
+}

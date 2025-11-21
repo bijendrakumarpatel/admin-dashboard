@@ -1,0 +1,32 @@
+:root {
+  /* --- Premium Color Palette --- */
+  --primary-color: #4f46e5;       /* Indigo 600 - Modern Blue */
+  --primary-hover: #4338ca;       /* Indigo 700 */
+  --secondary-color: #64748b;     /* Slate 500 */
+  
+  --bg-body: #f3f4f6;             /* Very light gray background */
+  --bg-surface: #ffffff;          /* Pure white cards */
+  
+  --text-main: #111827;           /* Almost Black */
+  --text-secondary: #6b7280;      /* Muted Gray */
+  
+  /* --- Soft Shadows (The key to Premium look) --- */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  
+  /* --- Spacing & Radius --- */
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  
+  /* --- Transitions --- */
+  --transition: all 0.3s ease-in-out;
+}
+
+body {
+  font-family: 'Inter', sans-serif; /* Applying the new font */
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,19 @@
+@import "./reset.css";
+@import "./variables.css";
+
+/* Global project styling */
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}

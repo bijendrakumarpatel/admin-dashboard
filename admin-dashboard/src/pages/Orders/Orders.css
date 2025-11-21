@@ -1,0 +1,15 @@
+.orders-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.orders-page__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orders-page__title {
+  font-size: 18px;
+  font-weight: 600;
+}
